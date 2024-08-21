@@ -1,0 +1,897 @@
+:root {
+    --main-background: #171717;
+    --main-color: white;
+    --main-color-hover: #cf711f;
+    --grey-color: #dedede;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetca", sans-serif;
+    line-height: 1.5;
+  }
+  
+  
+  main{
+    margin-left:  50px;
+    margin-right:  50px;
+  }
+  
+  header {
+    max-width:  100%;
+    object-fit: cover;
+    background-image:url(ARRIERE-PLAN/ARR7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  
+  header p {
+    margin-top: -30px;
+    margin-left: -400px;
+  }
+  
+  header p a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  h1 {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1/5;
+    color: var(--main-color);
+    text-align: center;
+  }
+
+  header h2{
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 6;
+    color: black;
+    text-align: center;
+    margin-top: 300px;
+  }
+#flipping-text{
+      font-size: 2em;
+      display: inline-block;
+      animation: flip 5s infinite;
+      backface-visibility: hidden;
+    }
+    
+@keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+  .logoMoto{
+    position:relative;
+    display: grid;
+    grid-row: 3;
+    grid-column: 1/2;
+    margin: -5px 5px 5px 5px;
+  }
+  .header-nav{
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+  
+  .header-nav ul {
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-left: 150px;
+    font-weight: bold;
+  }
+
+  .header-nav ul button {
+    background-color: gray;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header-nav ul li a:hover {
+    color: yellow;
+  }
+  
+  .header-nav ul li a:active {
+    color: orange;
+  }
+  
+  .header-nav ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .space {
+    white-space: nowrap;
+  }
+  .adresse{
+    grid-row: 4;
+    grid-column: 3/5;
+    color: white;
+    margin-top: -25px;
+    margin-right: 100px;
+  }
+  .adresse p a{
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .adresse p{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 100px; 
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .Moto-honda p a {
+    color: blue;
+    text-decoration: underline;
+  }
+  .Moto-honda p a:hover {
+    color: #3e8e41;
+    text-decoration: underline;
+    
+  }
+  
+  footer{
+      background-color: var(--main-background);
+  }
+  .footer-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+  }
+  .footer-section ul li{
+    list-style: none;
+  }
+  .footer-nav{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .footer-nav ul {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-left: 700px;
+  }
+  .MesRx{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 450px;
+  }
+  .MesRx  li {
+    list-style: none;
+  }
+  .footer-img{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3;
+    margin-top: -80px;
+    margin-left: 200px;
+  }
+  .footer-site{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  footer p {
+      color: white;
+  }
+  
+  
+  #paycard1{
+    width: 400px;
+    height: 50px;
+    margin-left: 450px;
+  }
+  
+  
+  #text h3 {
+    text-align: left;
+  }
+  
+  h2,
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+  /* Style pour le bouton */
+  
+  #ajustement{
+    position: absolute;
+    margin-top: -630px;
+    margin-left: -30px;
+    
+  }
+  
+  .dropbtn {
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style de base pour le dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    /*display: grid;
+    grid-row: 2/2;
+    margin-left: 30px;*/
+  }
+  
+  /* Contenu du dropdown (caché par défaut) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Liens à l'intérieur du dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Afficher le contenu du dropdown au survol du bouton */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Changer la couleur du bouton au survol */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  
+  
+  .Container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .Recherche {
+    background-color: #f5f5f5;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px black;
+  }
+  .Recherche ul li {
+    background-color: white;
+    list-style: none;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  
+  .Recherche ul li a {
+    text-align: left;
+    padding: 10px 50px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .Recherche ul li a:hover {
+    text-decoration: underline;
+    background-color: #3e8e41;
+  }
+  
+  .honda ul li img {
+    background-color: white;
+    width: 50px;
+    height: 20px;
+  }
+  
+  .Categorie {
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .Categorie ul li {
+    margin: 10px;
+    background-color: white;
+    list-style: none;
+    font-size: 1rem;
+    padding: 30px;
+    width: 200px;
+  }
+  
+  .Categorie ul li a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .Categorie ul li a:hover {
+    text-decoration: underline;
+    background-color: #3e8e41;
+  
+  }
+  
+  .ELmoment ul li img {
+    background-color: white;
+    width: 50px;
+    height: 30px;
+  }
+  
+  .Categorie .ELmoment1{
+      background-color: #d40000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110px;
+      width: 250px;
+      margin-left: 10px;
+  }
+  .Categorie .ELmoment1:hover{
+    background-color: #3e8e41;
+  }
+  .HONDA h2{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 3px black;
+  }
+  
+  #consultate{
+    font-weight: bold;
+  }
+ 
+  
+  .Pièces{
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      border-top: solid 2px black;
+    }
+    
+    .PiècesHonda{
+      display: flex;
+      flex-wrap:wrap;
+      margin-top: 20px;
+      margin-left: 70px;
+      line-height: 1.5;
+    }
+    .fig{
+      background-color: rgb(241, 236, 236);
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+      padding-left: -20px;
+      margin-right: 30px;
+      margin-top: 20px;
+    }
+    .fig:hover{
+      background-color: rgb(241, 236, 236);
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    .fig p {
+      color: blue;
+    }
+   .prix  {
+      color: black !important;
+      text-align: center;
+    }
+    
+    .imgimg{
+      padding-left: -20px;
+      width: 200px;
+      height: 200px;
+    }
+    
+    
+    .achat{
+      text-align: center;
+      padding: 15px 0;
+      padding-left: -20px;
+      background-color: black;
+    }
+
+    .achat a:hover{
+      text-decoration: underline;
+    }
+  
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-left: 50px;
+  }
+  
+  .testimonial {
+      background-color: white;
+      margin: 20px 20px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial:hover {
+    background-color: #f7f4f4;
+}
+  
+  img{
+      width: 200PX;
+      height: 300px;
+      object-fit: cover;
+  }
+  
+  h2 {
+      color: #333;
+  }
+
+  /* A-PROPOS*/
+  .propos p{
+    line-height: 1.5 !important;
+  }
+
+  /* Connexion*/
+  .login {
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    color: #333;
+}
+
+.login label {
+    display: block;
+    margin: 10px 0 5px ; 
+    font-size: 20px;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px !important;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ebe9e9;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #555;
+}
+
+.login p {
+    margin: 10px 0;
+}
+
+.login p a {
+  font-size: 10px;
+  color: gray;
+}
+
+#second a {
+  font-size: 20px !important;
+  color: black !important;
+}
+
+.login a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* Compte*/
+.compte {
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.compte label{
+  font-weight: bold;
+}
+
+.compte input{
+  background-color: #ebe9e9;
+}
+
+.compte button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.compte button:hover {
+  background-color: #555;
+}
+
+.compte p a{
+  color: blue;
+}
+
+
+ /* contact*/ 
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  form input {
+   background-color:  #ebe9e9;;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+  }
+  .contacts {
+    display: grid;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .contacts form {
+    box-shadow: 0px 0px 2px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .commande {
+    display: grid;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .commande form {
+    box-shadow: 0px 0px 2px;
+    display: grid;
+    gap: 10px;
+  }
+   legend {
+    text-align: center;
+  }
+  .Rx {
+    background-color: rgb(220, 220, 220);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr 1fr 1fr);
+    column-gap: 80px;
+    margin-top: 20px;
+    padding-left: 200px;
+    padding-right: 10px;
+    place-items: center;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px;
+  }
+  .Rx li a {
+    color: blue;
+  }
+  .Rx p a {
+    color: blue;
+  }
+  .etoile{
+    padding-left: 40px;
+  }
+
+  /* Panier */
+  .cart {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart table, .cart th, .cart td {
+    border: 1px solid #ddd;
+}
+
+.cart th, .cart td {
+    padding: 10px;
+    text-align: center;
+}
+
+.cart th {
+    background-color: #f4f4f4;
+}
+
+.cart input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+.cart button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+.update{
+  margin-left: 550px ;
+}
+.paye{
+  margin-left: 20px !important;
+}
+
+.cart button:hover {
+    background-color: #555;
+}
+
+/* Style général pour mobile */
+@media (max-width: 600px) {
+  main {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+header h1 {
+    grid-column: 1;
+    font-size: 1.5em;
+}
+
+.header-nav {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header .adresse {
+    grid-column: 1;
+    text-align: center;
+    margin-top: 500px;
+}
+
+footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.footer-nav {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+}
+  .MesRx {
+      margin-right: 100px;
+  }
+  .footer-img {
+      margin-right: 100px;
+  }
+  .footer-site {
+      margin-left: 20px;
+  }
+}
+
+/* Style pour tablette (entre mobile et bureau) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+  header {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+header h1 {
+    grid-column: 1 / 3;
+    font-size: 2em;
+}
+
+.header-nav {
+    grid-column: 1 / 3;
+    justify-content: center;
+}
+
+.header-nav ul {
+    margin-top: 40px;
+    margin-left: -20px;
+    gap: 0.8rem;
+}
+
+header .adresse {
+    grid-column: 2;
+    text-align: right;
+    margin-top: 30px;
+}
+
+header .adresse p {
+  color: orangered;
+  text-align: center;
+
+}
+
+footer {
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-nav {
+    justify-content: center;
+    margin-left: -700px;
+}
+
+.footer-nav ul {
+    gap: 2rem;
+    
+}
+.MesRx{
+  margin-left: -100px;
+}
+
+.footer-img{
+  margin-left: -250px;
+}
+/* Style pour écran large (bureau) */
+@media (min-width: 1025px) {
+  main {
+      margin-left: 50px;
+      margin-right: 50px;
+      header {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    header h1 {
+        grid-column: 1 / 4;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header-nav {
+        grid-column: 2 / 3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav ul {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .header-nav ul li a {
+        font-size: 1.2em;
+    }
+
+    header .adresse {
+        grid-column: 3 / 4;
+        text-align: right;
+        font-size: 1em;
+        align-self: center;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 40px;
+    }
+
+    .footer-nav {
+        grid-column: 1 / 4;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-nav ul {
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    .footer-nav ul li a {
+        font-size: 1.1em;
+    }
+
+    .footer-section {
+        grid-column: 1 / 4;
+        font-size: 1.1em;
+    }
+  }}}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - ETS HAROUNA ET FRERES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Votre Panier</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="commande.html">Commande</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignages.html">Témoignages</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="ancrePanier">Panier</h1>
+        <section class="cart">
+            <h2>Votre Panier</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Prix</th>
+                        <th>Quantité</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><input type="number"></td>
+                        <td><button>Supprimer</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number" value="2" min="1"></td>
+                        <td><input type="number"></td>
+                        <td><button>Supprimer</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Général</td>
+                        <td><input type="nu$"></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button>Mettre à jour le panier</button>
+            <button>Procéder au paiement</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ETS HAROUNA ET FRERES. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

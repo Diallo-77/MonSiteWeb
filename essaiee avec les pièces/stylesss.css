@@ -1,0 +1,52 @@
+.Pièces{
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-top: solid 2px black;
+  }
+  .Pièces:hover{
+    
+    }
+  
+  .PiècesHonda{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    line-height: 1.5;
+    margin-left: -10px;  
+  }
+  .fig{
+    background-color: rgb(241, 236, 236);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    padding-left: -20px;
+    margin-right: 10px;
+  }
+  .fig:hover{
+    background-color: rgb(241, 236, 236);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  .fig p {
+    color: blue;
+  }
+ .prix  {
+    color: black !important;
+    text-align: center;
+  }
+  
+  .imgimg{
+    padding-left: -20px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+  .achat{
+    text-align: center;
+    padding: 15px 0;
+    padding-left: -20px;
+    background-color: black;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
